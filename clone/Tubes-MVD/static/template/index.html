@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Numbers: Household Realities in Palau</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Navbar dikosongkan sesuai permintaan -->
+        <ul></ul>
+    </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-title">Living Numbers: Household Realities in Palau</div>
+            <div class="hero-desc">
+                The 2023 Household Income and Expenditure Survey (HIES) in Palau reveals an in-depth look at everyday life. Through these figures, we can understand the priorities, challenges, and socio-economic dynamics that shape the realities of households in Palau.
+            </div>
+            <div class="hero-credit" style="font-size:1.05rem;color:#444;margin-top:2.2rem;font-style:italic;">
+                A project by Fahmi Hidayat, Yoka Romadhani, And Wisnu Aji Sanjaya<br>
+                July 2025
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Section 1: Food Spending Priorities -->
+        <section class="viz-section" id="section1">
+            <div class="section-title"><span class="section-number">1</span> Food Spending Priorities: Dissecting Household Expenditures</div>
+            <p>Understanding how households in Palau allocate their food budgets offers crucial insights into their living priorities and economic pressures. The proportion of expenditure for each main food category is clearly illustrated, covering items like rice, fish and fish products, meat, and vegetables. The results will highlight which categories consume the largest share of household spending, directly reflecting dominant consumption patterns and the potential cost burden for specific commodities.</p>
+            <div id="sunburst-chart" class="chart-container"></div>
+        </section>
+
+        <!-- Section 2: Nutritional Availability -->
+        <section class="viz-section" id="section2">
+            <div class="section-title"><span class="section-number">2</span> Nutritional Availability: A Portrait of Average Nutrient Intake in Palau</div>
+            <p>The health of a population is often reflected in its nutritional intake. The average daily per capita intake for essential nutrients such as energy, protein, and fat is visualized, providing a macro-nutritional health indicator for Palau. This data will show how closely the average nutrient intake of Palau's population aligns with recommended standards, though it's important to remember that these are aggregate figures and do not reflect individual variations at the household level.</p>
+            <div id="nutrient-bar-chart" class="chart-container"></div>
+        </section>
+
+        <!-- Section 3: The Origin of Our Plates -->
+        <section class="viz-section" id="section3">
+            <div class="section-title"><span class="section-number">3</span> The Origin of Our Plates: Household Food Consumption Sources</div>
+            <p>Understanding where food comes from for households in Palau is key to assessing their food self-reliance. The contributions from purchased food, self-produced food, and food received as gifts are effectively separated. The results will indicate the extent to which households rely on the market versus their ability to be self-sufficient or receive social support, highlighting important aspects of economic resilience and local cultural practices.</p>
+            <div id="food-source-donut" class="chart-container"></div>
+        </section>
+
+        <!-- Section 4: Regional Disparities -->
+        <section class="viz-section" id="section4">
+            <div class="section-title"><span class="section-number">4</span> Regional Disparities: Comparing Urban and Rural Food Consumption</div>
+            <p>Geographical differences often correlate with disparities in living conditions. The average food consumption per capita between urban and rural areas in Palau is compared, highlighting existing gaps. The visualization's results will indicate whether there are significant differences in food consumption levels between urban and rural residents, which may imply disparities in market access, income, or traditional farming practices.</p>
+            <div id="regional-bar-chart" class="chart-container"></div>
+        </section>
+
+        <div class="conclusion-section">
+          <h2>Conclusion</h2>
+          <p>The food-related data from Palau's HIES 2023/2024 highlights key patterns in household behavior. Spending is concentrated on staples like rice and fish, showing both preferences and cost pressures. Average nutrient intake meets general standards but may hide household-level gaps. Many households still rely on self-production and gifts, reflecting cultural resilience. Lastly, urban-rural differences in food consumption reveal ongoing disparities in access and resources. These insights point to the need for more equitable and sustainable food policies across regions.</p>
+        </div>
+
+        <div class="material-method-section">
+          <h2>Material and Method</h2>
+          <p>This project was built using HTML, CSS, JavaScript, and Plotly.js for interactive charts. Data was processed in Python and sourced from the Palau HIES 2023/2024 survey. All visualizations use pre-processed JSON files, and the site runs as a static web page.</p>
+        </div>
+
+        <button id="backToTop" title="Back to top">↑</button>
+    </main>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    window.onscroll = function() {
+        backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+    };
+    backToTop.onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    </script>
+</body>
+</html>

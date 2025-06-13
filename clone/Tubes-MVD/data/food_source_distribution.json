@@ -1,0 +1,18 @@
+[
+    {
+        "Source":"Purchased",
+        "Share":75.31
+    },
+    {
+        "Source":"Own Produced",
+        "Share":3.48
+    },
+    {
+        "Source":"Away from Home",
+        "Share":17.78
+    },
+    {
+        "Source":"Other Sources",
+        "Share":3.43
+    }
+]

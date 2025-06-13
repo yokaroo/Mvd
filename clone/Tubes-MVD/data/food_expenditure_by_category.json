@@ -1,0 +1,62 @@
+[
+    {
+        "Category":"Roots, tubers, plantains and their products",
+        "Share":3.1
+    },
+    {
+        "Category":"Pulses, seeds and nuts and their products",
+        "Share":1.6
+    },
+    {
+        "Category":"Milk and milk products",
+        "Share":2.1
+    },
+    {
+        "Category":"Eggs and their products",
+        "Share":1.2
+    },
+    {
+        "Category":"Fish, shellfish and their products",
+        "Share":5.3
+    },
+    {
+        "Category":"Meat and meat products",
+        "Share":13.3
+    },
+    {
+        "Category":"Vegetables and their products",
+        "Share":1.2
+    },
+    {
+        "Category":"Fruits and their products",
+        "Share":3.3
+    },
+    {
+        "Category":"Fats and oils",
+        "Share":6.3
+    },
+    {
+        "Category":"Sweets and sugars",
+        "Share":4.2
+    },
+    {
+        "Category":"Spices and condiments",
+        "Share":2.1
+    },
+    {
+        "Category":"Beverages",
+        "Share":2.8
+    },
+    {
+        "Category":"Foods for particular nutritional uses",
+        "Share":0.1
+    },
+    {
+        "Category":"Food additives",
+        "Share":0.2
+    },
+    {
+        "Category":"Food additives",
+        "Share":0.2
+    }
+]
